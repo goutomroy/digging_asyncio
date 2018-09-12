@@ -12,6 +12,7 @@
 *   https://medium.freecodecamp.org/a-guide-to-asynchronous-programming-in-python-with-asyncio-232e2afa44f6
 *   https://arunrocks.com/get-started-with-async-and-await/
 *   http://masnun.com/2015/11/20/python-asyncio-future-task-and-the-event-loop.html
+*   http://masnun.rocks/2016/10/06/async-python-the-different-forms-of-concurrency/
 *   http://masnun.com/2015/11/13/python-generators-coroutines-native-coroutines-and-async-await.html
 *   https://www.aeracode.org/2018/02/19/python-async-simplified/
 *   https://www.aeracode.org/2018/06/04/django-async-roadmap/
