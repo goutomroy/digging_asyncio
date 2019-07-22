@@ -1,11 +1,11 @@
 import time
 import random
-from threading import Thread
+from multiprocessing import Process, Pool
 
 
-class Worker(Thread):
+class Processor(Process):
     def __init__(self, number):
-        Thread.__init__(self)
+        Process.__init__(self)
         self._number = number
 
     def run(self):
@@ -17,7 +17,7 @@ class Worker(Thread):
 if __name__ == "__main__":
 
     for i in range(1, 6):
-        task = Worker(i)
-        task.start()
+        t = Processor(i)
+        t.start()
 
-    print("Total 5 Threads are queued, let's see when they finish!")
+    print("Total 5 Processes are queued, let's see when they finish!")
