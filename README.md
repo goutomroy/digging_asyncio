@@ -9,7 +9,6 @@
 
 ### Tutorials
 
-*   https://medium.freecodecamp.org/a-guide-to-asynchronous-programming-in-python-with-asyncio-232e2afa44f6
 *   https://arunrocks.com/get-started-with-async-and-await/
 *   http://masnun.com/2015/11/20/python-asyncio-future-task-and-the-event-loop.html
 *   http://masnun.rocks/2016/10/06/async-python-the-different-forms-of-concurrency/

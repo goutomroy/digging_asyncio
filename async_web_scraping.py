@@ -47,4 +47,4 @@ if __name__ == '__main__':
         loop.run_until_complete(main())
     finally:
         loop.close()
-        print("Ran in {:6.3f} secs".format(time() - start_time))
+        print(f"Ran in {(time() - start_time):.3f} secs")
