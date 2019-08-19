@@ -32,7 +32,7 @@ async def aiohttp_get(url):
 
 async def fetch_async(pid):
     start = time.time()
-    sleepy_time = random.randint(5, 10)
+    sleepy_time = random.randint(10, 15)
     print('Fetch async process {} started, sleeping for {} seconds'.format(pid, sleepy_time))
 
     await asyncio.sleep(sleepy_time)

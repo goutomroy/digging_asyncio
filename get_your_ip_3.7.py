@@ -30,9 +30,12 @@ async def fetch_ip(service):
 
 
 async def main():
-    futures = [fetch_ip(service) for service in SERVICES]
-    done, pending = await asyncio.wait(futures, return_when=FIRST_COMPLETED)
-
+    tasks = set(asyncio.create_task(fetch_ip(service)) for service in SERVICES)
+    done, pending = await asyncio.wait(tasks, return_when=FIRST_COMPLETED)
+    for i in done:
+        print(type(i))
+    for i in pending:
+        print(type(i))
     print(done.pop().result())
 
 

@@ -23,25 +23,25 @@ async def fetch_ip(service):
     start = time.time()
     print('Fetching IP from {}'.format(service.name))
 
-    try:
-        json_response = await aiohttp_get_json(service.url)
-    except:
-        return '{} is unresponsive'.format(service.name)
-
+    # try:
+    #     json_response = await aiohttp_get_json(service.url)
+    # except:
+    #     return '{} is unresponsive'.format(service.name)
+    json_response = await aiohttp_get_json(service.url)
     ip = json_response[service.ip_attr]
-
-    return '{} finished with result: {}, took: {:.2f} seconds'\
-        .format(service.name, ip, time.time() - start)
+    return '{} finished with result: {}, took: {:.2f} seconds'.format(service.name, ip, time.time() - start)
 
 
 async def main():
     futures = [fetch_ip(service) for service in SERVICES]
-    done, _ = await asyncio.wait(futures)
+    done, pending = await asyncio.wait(futures)
 
     for future in done:
         try:
             print(future.result())
         except:
-            print("Unexpected error: {}".format(traceback.format_exc()))
+            print('----------------------------------')
+            # print("Unexpected error: {}".format(traceback.format_exc()))
+            print("Unexpected error: {}".format(future.exception()))
 
 asyncio.run(main())
