@@ -31,9 +31,7 @@ async def fetch_ip(service):
 
 async def main():
     futures = [fetch_ip(service) for service in SERVICES]
-    done, pending = await asyncio.wait(
-        futures, return_when=FIRST_COMPLETED)
-
+    done, pending = await asyncio.wait(futures, return_when=FIRST_COMPLETED)
     print(done.pop().result())
 
 

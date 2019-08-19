@@ -46,8 +46,7 @@ async def main(timeout):
     }
 
     futures = [fetch_ip(service) for service in SERVICES]
-    done, pending = await asyncio.wait(
-        futures, timeout=timeout, return_when=FIRST_COMPLETED)
+    done, pending = await asyncio.wait(futures, timeout=timeout, return_when=FIRST_COMPLETED)
 
     for future in pending:
         future.cancel()
@@ -60,10 +59,10 @@ async def main(timeout):
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    '-t', '--timeout',
-    help='Timeout to use, defaults to {}'.format(DEFAULT_TIMEOUT),
+    '-t', '--timeout', help='Timeout to use, defaults to {}'.format(DEFAULT_TIMEOUT),
     default=DEFAULT_TIMEOUT, type=float)
 args = parser.parse_args()
 
 print("Using a {} timeout".format(args.timeout))
-asyncio.run(main(args.timeout))
+# asyncio.run(main(args.timeout))
+asyncio.run(main(DEFAULT_TIMEOUT))

@@ -30,7 +30,8 @@ async def fetch_ip(service):
 
     ip = json_response[service.ip_attr]
 
-    return '{} finished with result: {}, took: {:.2f} seconds'.format(service.name, ip, time.time() - start)
+    return '{} finished with result: {}, took: {:.2f} seconds'\
+        .format(service.name, ip, time.time() - start)
 
 
 async def main():
