@@ -19,7 +19,7 @@
 *   https://hackernoon.com/asyncio-for-the-working-python-developer-5c468e6e2e8e
 *   https://medium.com/python-pandemonium/asyncio-coroutine-patterns-beyond-await-a6121486656f
 *   https://medium.com/@yeraydiazdiaz/asyncio-coroutine-patterns-errors-and-cancellation-3bb422e961ff
-
+*   https://edmundmartin.com/writing-a-web-crawler-in-python-3-5-using-asyncio/
 
 ### event loop
 An event loop is a loop that can register tasks to be executed, execute them, delay or even cancel them and handle different events related to these operations.
