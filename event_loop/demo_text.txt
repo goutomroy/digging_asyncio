@@ -1,0 +1,272 @@
+Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.
+
+
+
+Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.
+Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.
+Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.
+Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.
+Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.
+Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.
+Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.Event loop provides mechanisms to schedule callback functions to be called at some point in the future. Event loop uses monotonic clocks to track time.
+
+loop.call_later(delay, callback, *args, context=None)
+Schedule callback to be called after the given delay number of seconds (can be either an int or a float).
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+callback will be called exactly once. If two callbacks are scheduled for exactly the same time, the order in which they are called is undefined.
+
+The optional positional args will be passed to the callback when it is called. If you want the callback to be called with keyword arguments use functools.partial().
+
+An optional keyword-only context argument allows specifying a custom contextvars.Context for the callback to run in. The current context is used when no context is provided.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the delay could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.call_at(when, callback, *args, context=None)
+Schedule callback to be called at the given absolute timestamp when (an int or a float), using the same time reference as loop.time().
+
+This method’s behavior is the same as call_later().
+
+An instance of asyncio.TimerHandle is returned which can be used to cancel the callback.
+
+Changed in version 3.7: The context keyword-only parameter was added. See PEP 567 for more details.
+
+Changed in version 3.7.1: In Python 3.7.0 and earlier with the default event loop implementation, the difference between when and the current time could not exceed one day. This has been fixed in Python 3.7.1.
+
+loop.time()
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.

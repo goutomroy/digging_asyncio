@@ -19,21 +19,17 @@ async def coro2(event):
     print('coro2 triggered')
 
 
-async def main(loop):
+async def main():
     # Create a shared event
     event = asyncio.Event()
     print('event start state: {}'.format(event.is_set()))
 
-    loop.call_later(
-        10, functools.partial(set_event, event)
-    )
+    asyncio.get_running_loop().call_later(10, functools.partial(set_event, event))
 
     await asyncio.wait([coro1(event), coro2(event)])
     print('event end state: {}'.format(event.is_set()))
 
 
-event_loop = asyncio.get_event_loop()
-try:
-    event_loop.run_until_complete(main(event_loop))
-finally:
-    event_loop.close()
+asyncio.run(main())
+
+

@@ -27,9 +27,7 @@ parser.add_argument('--url', type=str, help='URL of a post in HN')
 parser.add_argument('--verbose', action='store_true', help='Detailed output')
 
 
-logging.basicConfig(format=LOGGER_FORMAT, datefmt='[%H:%M:%S]')
-log = logging.getLogger()
-log.setLevel(logging.INFO)
+logging.basicConfig(format=LOGGER_FORMAT, datefmt='[%H:%M:%S]', level=logging.INFO)
 
 fetch_counter = 0
 
